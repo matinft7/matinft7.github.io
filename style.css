@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: #252525;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+.nav-bar{
+    width: 100%;
+    background-color: #222;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.nav-bar .nav-logo{
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav-bar .nav-logo span{
+    text-shadow: rgb(255, 255, 255) 1px 0 15px;
+    color: rgb(255, 255, 255);
+    filter: brightness(150%);
+}
+.nav-bar ul{
+    list-style: none;
+}
+.banner{
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+    border-bottom: 2px solid #e7e7e7;
+    width: 90%;
+}
+.banner .banner-text{
+    font-size: 50px;
+    width: fit-content;
+    font-family: "Montserrat";
+    font-weight: 900;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.banner button {
+    position: relative;
+    padding: 5px 17px 5px 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.banner button svg {
+    position: relative;
+    left: 5px;
+    width: 15px;
+    fill: #fff;
+}
+.banner button .btn-background {
+    position: absolute;
+    top: 0;
+    left: 23px;
+    right: 0;
+    height: 100%;
+    background-color: #0f33ff;
+    z-index: -1;
+    -webkit-transition: left .2s ease-in-out;
+    transition: left .2s ease-in-out;
+}
+.banner button:hover .btn-background{
+    left: 0;
+}
+.banner img{
+    width: 35%;
+}
+@media only screen and (max-width:700px){
+    .banner img,.banner-text{
+        width: 100%;
+    }
+}
