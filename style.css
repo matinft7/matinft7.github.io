@@ -61,12 +61,14 @@ body{
     position: relative;
     padding: 5px 17px 5px 12px;
     font-weight: 700;
-    text-transform: uppercase;
     background-color: transparent;
     border: none;
     width: fit-content;
     margin-top: 1rem;
     cursor: pointer;
+}
+.banner a{
+    text-decoration: none;
 }
 .banner button svg {
     position: relative;
