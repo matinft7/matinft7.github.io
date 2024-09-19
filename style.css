@@ -21,8 +21,9 @@ body{
     color: white;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
 }
 .nav-bar .nav-logo{
     font-weight: bold;
@@ -37,13 +38,15 @@ body{
     list-style: none;
 }
 .banner{
-    padding: 1rem;
+    padding: 1rem 0;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     padding-bottom: 0;
     border-bottom: 2px solid #e7e7e7;
+}
+.section{
     width: 90%;
 }
 .banner .banner-text{
@@ -91,5 +94,25 @@ body{
 @media only screen and (max-width:700px){
     .banner img,.banner-text{
         width: 100%;
+    }
+}
+.experiences{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.experience{
+    width: calc(100% / 3 - 1rem);
+    text-align: center;
+}
+.experience h3{
+    font-family: "Montserrat";
+}
+@media only screen and (max-width:700px){
+    .experience{
+        width: 100%;
+        margin-bottom: 1rem;
     }
 }
