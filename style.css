@@ -17,7 +17,7 @@ body{
 .nav-bar{
     width: 100%;
     background-color: #222;
-    box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
     color: white;
     display: flex;
     flex-flow: row nowrap;
