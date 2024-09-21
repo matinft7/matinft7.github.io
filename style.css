@@ -109,7 +109,7 @@ body{
         width: 100%;
     }
 }
-@media only screen and (max-width:900px){
+@media screen and (max-width:1024px) and (min-width:700px){
     .banner-text{
         font-size: 25px !important;
     }
