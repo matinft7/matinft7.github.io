@@ -44,13 +44,16 @@ body{
     align-items: center;
     justify-content: center;
     padding-bottom: 0;
-    border-bottom: 2px solid #e7e7e7;
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    margin: 1rem 0;
+    border-radius: 25px;
 }
 .section{
     width: 90%;
 }
 .banner .banner-text{
     font-size: 50px;
+    padding: 1rem;
     width: fit-content;
     font-family: "Montserrat";
     font-weight: 900;
@@ -59,6 +62,8 @@ body{
 }
 .banner button {
     position: relative;
+    display: flex;
+    align-items: baseline;
     padding: 5px 17px 5px 12px;
     font-weight: 700;
     background-color: transparent;
@@ -70,11 +75,15 @@ body{
 .banner a{
     text-decoration: none;
 }
+.banner button p{
+    z-index: 2;
+}
 .banner button svg {
     position: relative;
     left: 5px;
     width: 15px;
     fill: #fff;
+    z-index: 2;
 }
 .banner button .btn-background {
     position: absolute;
@@ -83,7 +92,6 @@ body{
     right: 0;
     height: 100%;
     background-color: #0f33ff;
-    z-index: -1;
     -webkit-transition: left .2s ease-in-out;
     transition: left .2s ease-in-out;
 }
@@ -94,6 +102,9 @@ body{
     width: 35%;
 }
 @media only screen and (max-width:700px){
+    .banner img{
+        border-bottom-right-radius: 25px;
+    }
     .banner img,.banner-text{
         width: 100%;
     }
