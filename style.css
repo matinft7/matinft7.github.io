@@ -135,7 +135,7 @@ body{
     align-items: center;
     padding: 1rem;
     border-radius: var(--radius);
-    background-color: #333;
+    background-color: var(--sec-color);
 }
 .experience{
     width: calc(100% / 3 - 1rem);
@@ -150,21 +150,26 @@ body{
         margin-bottom: 1rem;
     }
 }
-.skills{
+.about{
+    background-color: var(--sec-color);
+    border-radius: var(--radius);
+    padding: 1rem;
+}
+.about p{
+    margin-bottom: 1rem;
+}
+.skills-icon{
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 40px;
-    padding: 1rem;
-    background-color: #333;
-    border-radius: var(--radius);
 }
-.skills img{
+.skills-icon img{
     width: 50px;
     height: 50px;
 }
 @media only screen and (max-width:1000px){
-    .skills{
+    .skills-icon{
         overflow-x: scroll;
     }
 }
