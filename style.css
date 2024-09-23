@@ -1,3 +1,9 @@
+:root{
+    --back-color:#252525;
+    --main-color:#222;
+    --sec-color:#333;
+    --radius:16px;
+}
 *{
     padding: 0;
     margin: 0;
@@ -6,7 +12,7 @@
     color: white;
 }
 body{
-    background-color: #252525;
+    background-color: var(--back-color);
 }
 .main{
     display: flex;
@@ -16,17 +22,15 @@ body{
 }
 .nav-bar{
     width: 100%;
-    background-color: #222;
+    background-color: var(--main-color);
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
     color: white;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
 }
 .nav-bar .nav-logo{
-    font-weight: bold;
     font-size: 20px;
 }
 .nav-bar .nav-logo span{
@@ -37,6 +41,15 @@ body{
 .nav-bar ul{
     list-style: none;
 }
+.nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar .name{
+    font-size: 20px;
+    font-weight: bold;
+}
 .banner{
     padding: 1rem 0;
     display: flex;
@@ -46,10 +59,11 @@ body{
     padding-bottom: 0;
     background: linear-gradient(to top, #09203f 0%, #537895 100%);
     margin: 1rem 0;
-    border-radius: 25px;
+    border-radius: var(--radius);
 }
 .section{
     width: 90%;
+    margin: 1rem 0;
 }
 .banner .banner-text{
     font-size: 50px;
@@ -119,7 +133,9 @@ body{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem;
+    border-radius: var(--radius);
+    background-color: #333;
 }
 .experience{
     width: calc(100% / 3 - 1rem);
@@ -132,5 +148,23 @@ body{
     .experience{
         width: 100%;
         margin-bottom: 1rem;
+    }
+}
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+    padding: 1rem;
+    background-color: #333;
+    border-radius: var(--radius);
+}
+.skills img{
+    width: 50px;
+    height: 50px;
+}
+@media only screen and (max-width:1000px){
+    .skills{
+        overflow-x: scroll;
     }
 }
