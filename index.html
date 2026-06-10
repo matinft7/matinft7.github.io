@@ -1,83 +1,134 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>it's Light</title>
-        <link rel="stylesheet" href="./style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    </head>
-    <body>
-        <nav class="nav-bar">
-            <div class="nav-content section">
-                <div class="name">
-                    Matin Fathi
-                </div>
-                <div class="nav-logo">
-                    it's <span>Light</span>
-                </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matin Fathi | AI & Web Developer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">it's <span>Light</span></div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="mailto:matinft20@gmail.com" class="btn-outline">Contact Me</a>
             </div>
-        </nav>
-        <main class="main">
-            <div class="banner section">
-                <div class="banner-text">
-                    Deep Learning <br> and <br> Front-End <br> Developer
-                    <a href="https://github.com/matinft7">
-                    <button class="cta"><p>Github</p>
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                        <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                          <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"></path>
-                        </g>
-                        </svg>
-                        <span class="btn-background"></span>
-                    </button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        
+        <section class="hero glass-panel">
+            <div class="hero-content">
+                <p class="greeting">👋 Hi, I'm Matin Fathi (Light)</p>
+                <h1 class="hero-title">
+                    <span class="gradient-text">AI Engineer</span> <br> 
+                    & Web Developer
+                </h1>
+                <p class="hero-desc">
+                    Exploring the intersection of high-performance web architecture and artificial intelligence. Specializing in Deep Learning, Generative AI, and modern scalable microservices.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://github.com/matinft7" target="_blank" class="btn-primary">
+                        <i class="bi bi-github"></i> GitHub Profile
+                    </a>
+                    <a href="https://open.spotify.com/playlist/3rmAzugyov4VI2xGLZgVFA?si=MmND9uRsTdGEo9fea-tx6w" target="_blank" class="btn-secondary">
+                        <i class="bi bi-spotify"></i> Coding Vibe
                     </a>
                 </div>
-                <img src="./images/intro.webp" alt="intro-image">
             </div>
-            <div class="experiences section">
-                <div class="experience">
-                    <h3>My Deep Learning Experience</h3>
-                    <p>Tensorflow, Pytorch, Keras</p>
-                </div>
-                <div class="experience">
-                    <h3>My Front End Experience</h3>
-                    <p>HTML, CSS, JS, NextJS, Sass, Tailwind, Bootstrap</p>
-                </div>
-                <div class="experience">
-                    <h3>My Back End and API Experience</h3>
-                    <p>PHP, Flask, FastAPI, Joomla!</p>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="./images/intro.webp" alt="Matin Fathi - Light">
                 </div>
             </div>
-            <div class="about section">
-                <div class="skills-icon">
-                    <i class="devicon-pytorch-original colored"></i>
-                    <i class="devicon-tensorflow-original colored"></i>
-                    <i class="devicon-keras-plain colored"></i>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" />
-                    <i class="devicon-jupyter-plain-wordmark colored"></i>
-                    <i class="devicon-php-plain colored"></i>
-                    <i class="devicon-html5-plain colored"></i>
-                    <i class="devicon-css3-plain colored"></i>
-                    <i class="devicon-bootstrap-plain colored"></i>
-                    <i class="devicon-tailwindcss-original colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-jquery-plain-wordmark colored"></i>
-                    <i class="devicon-nextjs-plain"></i>
-                    <i class="devicon-flask-original"></i>
-                    <i class="devicon-fastapi-plain colored"></i>
-                    <i class="devicon-vscode-plain colored"></i>
-                    <i class="devicon-postman-plain colored"></i>
-                    <i class="devicon-git-plain colored"></i>
-                    <i class="devicon-ubuntu-plain colored"></i>
-                    <i class="devicon-vim-plain colored"></i>
-                    <i class="devicon-cplusplus-plain colored"></i>
+        </section>
+
+        <section id="about" class="expertise-grid">
+            <div class="expertise-card glass-panel">
+                <div class="card-icon"><i class="bi bi-cpu"></i></div>
+                <h3>Artificial Intelligence</h3>
+                <p>Deep Learning frameworks (PyTorch, TensorFlow), traditional ML, and LLM orchestration.</p>
+            </div>
+            <div class="expertise-card glass-panel">
+                <div class="card-icon"><i class="bi bi-window-fullscreen"></i></div>
+                <h3>Front-End Architecture</h3>
+                <p>Crafting modern, responsive UIs with Next.js, TailwindCSS, React, and native web tech.</p>
+            </div>
+            <div class="expertise-card glass-panel">
+                <div class="card-icon"><i class="bi bi-hdd-network"></i></div>
+                <h3>Backend & Systems</h3>
+                <p>Building high-performance, scalable microservices using Go (Golang), FastAPI, and PHP.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="tech-stack glass-panel">
+            <div class="section-header">
+                <h2>Tech Stack & <span>Tools</span></h2>
+                <p>Technologies I work with on a daily basis to bring ideas to life.</p>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h4>AI & Machine Learning</h4>
+                    <div class="icons-grid">
+                        <i class="devicon-python-plain colored" title="Python"></i>
+                        <i class="devicon-pytorch-original colored" title="PyTorch"></i>
+                        <i class="devicon-tensorflow-original colored" title="TensorFlow"></i>
+                        <i class="devicon-scikitlearn-plain colored" title="Scikit-Learn"></i>
+                        <i class="devicon-jupyter-plain-wordmark colored" title="Jupyter"></i>
+                    </div>
+                </div>
+
+                <!-- Web Frontend -->
+                <div class="skill-category">
+                    <h4>Web Development</h4>
+                    <div class="icons-grid">
+                        <i class="devicon-nextjs-plain" title="Next.js"></i>
+                        <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+                        <i class="devicon-tailwindcss-original colored" title="Tailwind CSS"></i>
+                        <i class="devicon-sass-original colored" title="Sass"></i>
+                        <i class="devicon-html5-plain colored" title="HTML5"></i>
+                        <i class="devicon-css3-plain colored" title="CSS3"></i>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Backend & DevOps</h4>
+                    <div class="icons-grid">
+                        <i class="devicon-go-original-wordmark colored" title="Go"></i>
+                        <i class="devicon-fastapi-plain colored" title="FastAPI"></i>
+                        <i class="devicon-flask-original" title="Flask"></i>
+                        <i class="devicon-php-plain colored" title="PHP"></i>
+                        <i class="devicon-cplusplus-plain colored" title="C++"></i>
+                        <i class="devicon-ubuntu-plain colored" title="Ubuntu"></i>
+                        <i class="devicon-git-plain colored" title="Git"></i>
+                    </div>
                 </div>
             </div>
-        </main>
-    </body>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Matin Fathi (Light). Designed with passion & code.</p>
+        <div class="socials">
+            <a href="https://github.com/matinft7"><i class="bi bi-github"></i></a>
+            <a href="https://instagram.com/mawtinft"><i class="bi bi-instagram"></i></a>
+            <a href="mailto:matinft20@gmail.com"><i class="bi bi-envelope"></i></a>
+        </div>
+    </footer>
+
+</body>
 </html>
